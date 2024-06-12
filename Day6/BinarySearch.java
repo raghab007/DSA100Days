@@ -7,6 +7,8 @@ public class BinarySearch {
         System.out.println(binarySearch(arr, -1)); // Should return -1
         System.out.println(binarySearch(arr, 4));  // Should return 3
         System.out.println("Hello world");
+
+        System.out.println(binarySearchRecursion(arr, 10, 0, arr.length-1)); // Should return 7
     }
 
     static int binarySearch(int[] arr, int target) {
@@ -15,7 +17,7 @@ public class BinarySearch {
         while (start <= end) {
             int mid = (start + end) / 2;
             if (arr[mid] == target) {
-                return mid;
+                return target;
             } else if (target < arr[mid]) {
                 end = mid - 1;
             } else {
@@ -24,4 +26,22 @@ public class BinarySearch {
         }
         return -1;
     }
+
+    static int binarySearchRecursion(int[] array, int target, int start, int end) {
+        if (start > end) {
+            return -1;
+        }
+        
+        int mid = (start + end) / 2;
+
+        if (array[mid] == target) {
+            return target;
+        } else if (target > array[mid]) {
+            return binarySearchRecursion(array, target, mid + 1, end);
+        } else {
+            return binarySearchRecursion(array, target, start, mid - 1);
+        }
+    }
 }
+
+
