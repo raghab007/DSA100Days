@@ -1,14 +1,12 @@
 package Day6;
-
-
 public class BinarySearch {
     public static void main(String[] args) {
          int[] arr = new int[]{1, 2, 3, 4, 5, 6, 7, 10};
          int [] array = {100,80,60,50,4,3,2,1};
+         int [][] TwoDArray = {{1,2,3,4},{44,55,66,777},{9,0,2,3}};
+         System.out.println(searchIn2DBS(TwoDArray, 55));
          System.out.println(orderAgnosticBS(array, 100));
-         System.out.println(orderAgnosticBS(arr, 7));
-       
-
+         System.out.println(orderAgnosticBS(arr, 7)); 
     }
     static int orderAgnosticBS(int[] arr, int target) {
         int start = 0;
@@ -54,6 +52,21 @@ public class BinarySearch {
         } else {
             return binarySearchRecursion(array, target, start, mid - 1);
         }
+    }
+
+
+    static int searchIn2DBS(int [][] arr,int target){
+        for(int i = 0;i<arr.length;i++){
+            for(int j=0;j<arr[i].length;j++){
+                int element = arr[i][j];
+                if (element==target) {
+
+                    return target;
+               }
+            }
+        }
+        return -1;
+
     }
 }
 

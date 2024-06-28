@@ -7,9 +7,6 @@ public class SearchIn2D {
         System.out.println(searchIn2DMax(array));
 
     }
-
-
-
     public static int searchIn2DMax(int [][] array){
         int max = array[0][0];
         for (int i=0;i<array.length;i++){
@@ -19,12 +16,10 @@ public class SearchIn2D {
 
                 }
             }
-
         }
         return  max;
 
     }
-
     public static int searchIn2DMin(int [][] array){
         int min = array[0][0];
         for (int i=0;i<array.length;i++){
@@ -34,7 +29,6 @@ public class SearchIn2D {
 
                 }
             }
-
         }
         return  min;
 

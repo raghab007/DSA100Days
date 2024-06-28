@@ -1,18 +1,18 @@
-package Day7;
+package Day7.SearchInMatrix;
 
 import java.util.Arrays;
 
 public class BS2D {
     public static void main(String[] args) {
-        int [][] matrix = {{1,2,3,4},{5,6,7,8}};
-        System.out.println(binarySearch2D(matrix, 8));
+        int [][] matrix = {{1,2,3,4},{5,6,7,8},{55,66,77,88}};
+        System.out.println(binarySearch2D(matrix, 77));
         
     }
 
     static String binarySearch2D(int [][] arr,int target){
         int row = 0;
         int col = arr[row].length-1;
-        while(true){
+        while(col>=0 && row< arr.length){
             if (arr[row][col]>target) {
                  --col;
                 
@@ -26,6 +26,8 @@ public class BS2D {
             }
 
         }
+
+        return Arrays.toString(new int[]{-1,-1});
 
     }
 
