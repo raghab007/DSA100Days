@@ -51,11 +51,6 @@ public class SearchInFullySortedMatrix {
         return new  int[]{-1,-1};
 
     }
-
-
-
-
-
    //Binary Search In Single Array
     static int[] simpleBinarySearch(int[][] array, int row, int start, int end,int target){
         if (array.length==0){
