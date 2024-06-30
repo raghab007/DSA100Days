@@ -25,9 +25,7 @@ public class BubbleSort {
                     // If this is if block is executed, then we have to run for loop again.
                     // If this is if loop is not executed, then we know the array is sorted so we dont have to run the loop
                     isSorted = false;
-
                 }
-
             }
             --k;
         }
