@@ -1,4 +1,4 @@
-package SortingAlgorithms;
+package Day8.SortingAlgorithms;
 
 import java.util.Arrays;
 
@@ -9,7 +9,6 @@ public class BubbleSort {
         System.out.println(Arrays.toString(array));
 
     }
-
     private static void bubbleSort(int [] array){
         boolean isSorted = false;
        int k = array.length-2;

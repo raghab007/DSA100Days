@@ -12,6 +12,7 @@ public class MissingNumber {
         int i = 0;
         while (i < l) {
             int correctIndex = array[i];
+            // Swapping element if its  not in the right index
             if (correctIndex < l && array[i] != array[correctIndex]) {
                 swap(array, i, correctIndex);
             } else {
@@ -35,7 +36,7 @@ public class MissingNumber {
             array[a] = array[b];
             array[b] = c;
         }
-
+        
 
     }
 
