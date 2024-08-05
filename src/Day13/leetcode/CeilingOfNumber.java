@@ -7,6 +7,7 @@ public class CeilingOfNumber {
         System.out.println(ceilingOfNumber(array, 12));
         System.out.println(ceilingOfNumber(array, 5));
         System.out.println(ceilingOfNumber(array,16));
+        System.out.println(betterWay(array, 16));
     }
 
    static public int ceilingOfNumber(int [] array, int target){
@@ -33,5 +34,21 @@ public class CeilingOfNumber {
             }
         }
         return -1;
+    }
+
+    static int betterWay(int [] array, int target){
+        int start = 0;
+        int end = array.length-1;
+        while(start<=end){
+            int mid  = (start+end)/2;
+            if (array[mid] == target){
+                return mid;
+            } else if (array[mid]>target) {
+                end = mid-1;
+            }else {
+                start = mid+1;
+            }
+        }
+        return  start;
     }
 }
