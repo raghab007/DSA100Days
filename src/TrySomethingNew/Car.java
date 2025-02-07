@@ -12,6 +12,7 @@ public class Car {
         this.price = price;
         System.out.println("after initialization");
         System.out.println(this);
+
     }
 
     public static void main(String[] args) {
