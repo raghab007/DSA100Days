@@ -1,8 +1,6 @@
 package Day14.FileHandling;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class CreatingFile {
     public static void main(String[] args) throws IOException {
@@ -16,4 +14,5 @@ public class CreatingFile {
         FileWriter fileWriter = new FileWriter(absoluteFile);
         fileWriter.write("How are you");
     }
+
 }

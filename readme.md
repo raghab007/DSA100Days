@@ -38,3 +38,10 @@ Types of streams
 * Delete a File
 
 
+## On the basis of types of data (byte and character)
+![img_2.png](img_2.png)
+
+
+## InputStreamReader
+> It is a bridge between byte data and character data.Its reads the InputStream i.e byte data converts them into the character data. It is a child class of Reader
+> ![img_3.png](img_3.png)

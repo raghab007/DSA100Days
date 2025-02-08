@@ -1,13 +1,15 @@
 package Day14.FileHandling;
 
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 public class WritingFile {
     public static void main(String[] args) {
         try {
             FileWriter fileWriter = new FileWriter("raghab.txt");
+            FileReader fileReader = new FileReader("raghab.txt");
+
+            BufferedInputStream inputStream = new BufferedInputStream(new FileInputStream(""));
             Scanner scanner = new Scanner(System.in);
             int i = 1;
             while(i<11){
@@ -15,7 +17,6 @@ public class WritingFile {
                 String s = scanner.nextLine();
                 System.out.println(s);
                 fileWriter.write(s+"\n");i++;
-
             }
             fileWriter.close();
         }
