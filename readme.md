@@ -44,4 +44,4 @@ Types of streams
 
 ## InputStreamReader
 > It is a bridge between byte data and character data.Its reads the InputStream i.e byte data converts them into the character data. It is a child class of Reader
-> ![img_3.png](img_3.png)
+> ![img_4.png](img_4.png)
